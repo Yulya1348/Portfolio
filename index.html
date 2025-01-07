@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-верстальщик</title>
+
+  <link rel="preload" href="fonts/Roboto-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header container">
+    <h1 class="title-h1">HTML-верстальщик</h1>
+    <div class="header-left">
+      <p class="header-left__text">Портфолио</p>
+      <span class="header-left__dot"></span>
+    </div>
+    <nav class="nav">
+      <ul class="header-right__list" id="menu">
+        <li class="header-right__item">
+          <a class="header-right__link" href="#about" data-hover="Обо мне">Обо мне</a>
+        </li>
+        <li class="header-right__item">
+          <a class="header-right__link" data-hover="Инструменты" href="#tools">Инструменты</a>
+        </li>
+        <li class="header-right__item">
+          <a class="header-right__link" data-hover="Проекты" href="#projects">Проекты</a>
+        </li>
+        <li class="header-right__item">
+          <a class="header-right__link" data-hover="Контакты" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-burger" aria-label="Открыть меню">
+      <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 12.5V10.5H18V12.5H0ZM0 7.5V5.5H18V7.5H0ZM0 2.5V0.5H18V2.5H0Z" fill="#4acde4"/>
+      </svg>
+    </button>
+    <div class="header-mobile__burger-menu">
+      <button class="header-mobile__burger-close">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93945 5.99995L0.969727 9.96968L2.03039 11.0303L6.00011 7.06061L9.96984 11.0303L11.0305 9.96968L7.06077 5.99995L11.0304 2.03034L9.96973 0.969681L6.00011 4.93929L2.0305 0.969681L0.969839 2.03034L4.93945 5.99995Z" fill="#4acde4"/>
+        </svg>
+      </button>
+      <nav class="header-mobile__burger-nav">
+        <ul class="header-mobile__list">
+          <li class="header-mobile__item"><a class="header-mobile__link" href="#about">Обо мне</a></li>
+          <li class="header-mobile__item"><a class="header-mobile__link" href="#tools">Инструменты</a></li>
+          <li class="header-mobile__item"><a class="header-mobile__link" href="#projects">Проекты</a></li>
+          <li class="header-mobile__item"><a class="header-mobile__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero container section-pd">
+      <div class="section-hero-left" id="about">
+        <h2 class="section-hero__title title-color">Верстка сайтов</h2>
+        <h2 class="section-hero__title">на основе дизайн-макетов</h2>
+        <p class="section-hero-left__descr">Привет! Я Тюпакова Юлия, HTML-верстальщик из Москвы. Выполню верстку лендингов и html-писем.</p>
+        <a class="section-hero-left__btn" href="https://t.me/yulya1348">Написать мне</a>
+      </div>
+      <div class="section-hero-right">
+        <img class="section-hero-right__img" src="img/foto-fotor-20240616144912.png" alt="">
+      </div>
+    </section>
+    <section class="section-about section-pd">
+      <div class="container section-about__container">
+        <h2 class="section-about__heading heading-h2">Инструменты</h2>
+        <ul class="section-about__content" id="tools">
+          <li class="section-about__card">
+            <img class="section-about__card-img" src="img/icon1.svg" alt="">
+            <h3 class="section-about__card-title">Что я могу сделать для вас</h3>
+            <ul class="section-about__list">
+              <li class="section-about__item">Адаптивная верстка лендингов и сайтов</li>
+              <li class="section-about__item">Табличная верстка html-писем</li>
+              <li class="section-about__item">Верстка html-писем с использованием шаблонов</li>
+            </ul>
+          </li>
+          <li class="section-about__card">
+            <img class="section-about__card-img" src="img/icon2.svg" alt="">
+            <h3 class="section-about__card-title">Технологии</h3>
+            <ul class="section-about__list">
+              <li class="section-about__item">HTML5 + CSS3</li>
+              <li class="section-about__item">JavaScript</li>
+              <li class="section-about__item">Figma</li>
+              <li class="section-about__item">Bootstrap</li>
+              <li class="section-about__item">БЭМ</li>
+              <li class="section-about__item">Gulp</li>
+              <li class="section-about__item">SCSS</li>
+            </ul>
+          </li>
+          <li class="section-about__card">
+            <img class="section-about__card-img" src="img/icon3.svg" alt="">
+            <h3 class="section-about__card-title">Что вы получите</h3>
+            <ul class="section-about__list">
+              <li class="section-about__item">Адаптивную верстку для всех экранов</li>
+              <li class="section-about__item">"Чистый" валидный код</li>
+              <li class="section-about__item">Кросс-браузерность</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-projects section-pd" id="projects">
+      <div class="section-projects__bg">
+        <div class="container section-projects__container">
+          <h2 class="section-projects__heading heading-h2">Проекты</h2>  
+          <div class="section-projects__swiper swiper" data-mobile="false">
+            <div class="swiper-wrapper section-projects__swiper-wrapper">
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio1.jpg" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">Многостраничный сайт</span>
+                      <p class="section-projects__name">База аптек и лекарств МО</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/LekMos/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio2.jpg" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">HTML-письмо</span>
+                      <p class="section-projects__name">Рассылка для продажи ПО</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/spring_mail/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio3.jpg" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">Многостраничный сайт</span>
+                      <p class="section-projects__name">Строительстро деревянных домов</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/KosBrus/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio4.jpg" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">HTML-письмо</span>
+                      <p class="section-projects__name">Реклама фитнес-клуба</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/fitness-mail/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio5.png" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">Страница сайта</span>
+                      <p class="section-projects__name">Каталог магазина наушников</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/pods/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-projects__item swiper-slide">
+                <div class="section-projects__bg-card">
+                  <div class="section-projects__card-content">
+                    <div class="section-projects__img-wrap">
+                      <img class="section-projects__img" src="img/portfolio6.png" alt="">
+                    </div>
+                    <div class="section-projects__card-text">
+                      <span class="section-projects__category">Лендинг</span>
+                      <p class="section-projects__name">Страница медицинского препарата</p>
+                      <a class="section-projects__link" href="https://yulya1348.github.io/Ozempic/" target="_blank">Посмотреть проект</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="section-projects__btns">
+            <button class="sw-btn section-projects__btn-left"><span></span></button>
+            <button class="sw-btn section-projects__btn-right"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <span class="footer__top-text">Открыта для сотрудничества!</span>
+        <span class="footer__top-text footer__top-text-bg">Свяжитесь со мной.</span>
+      </div>
+      <div class="footer__bottom" id="contacts">
+        <ul class="footer__contacts">
+          <li class="footer__text">Телефон: 
+            <a class="footer__link" href="tel:+79191392420">+7 919 139 24 20</a>
+          </li>
+          <li class="footer__text">E-mail:
+            <a class="footer__link" href="mailto:yulya1348@yandex.ru">yulya1348@yandex.ru</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" target="_blank" href="https://vk.com/id42092666" aria-label="Ссылка на страницу вконтакте">
+              <img class="footer__icon" src="img/vk_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" target="_blank" href="https://t.me/yulya1348" aria-label="Ссылка на чат в телеграм">
+              <img class="footer__icon" src="img/telegram_icon.svg" alt="">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" target="_blank" href="https://wa.me/79191392420" aria-label="Ссылка на чат What`s app">
+              <img class="footer__icon" src="img/whatsapp_icon.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>   
+
+  </footer>
+  
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
